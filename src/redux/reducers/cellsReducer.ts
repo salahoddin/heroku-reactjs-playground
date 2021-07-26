@@ -118,8 +118,6 @@ export const cellsReducer =
 				return state
 			}
 			case ActionType.FETCH_CELLS_COMPLETE: {
-				console.log(action.payload)
-
 				state.order = action.payload.map((cell) => cell.id) // order array
 				// state data
 				state.data = action.payload.reduce((acc, cell) => {
